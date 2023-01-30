@@ -1,0 +1,60 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Employee Details</h1>
+<br />
+<br />
+
+<div class="row">
+    <div class="col-12">
+    <div class="form-group">
+        <label asp-for="@Model.Name" class="col-form-label"></label>
+        <input asp-for="@Model.Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Age" class="col-form-label"></label>
+        <input asp-for="@Model.Age" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Address" class="col-form-label"></label>
+        <input asp-for="@Model.Address" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Salary" class="col-form-label"></label>
+        <input asp-for="@Model.Salary" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Email" class="col-form-label"></label>
+        <input asp-for="@Model.Email" class="form-control" />
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="@Model.PhoneNumber" class="col-form-label"></label>
+        <input asp-for="@Model.PhoneNumber" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.HireDate" class="col-form-label"></label>
+        <input asp-for="@Model.HireDate" class="form-control" />
+    </div>
+    <br />
+
+    <div class="col-6">
+        <img src="~/files/imgs/@Model.ImgName" id="empImage" class="col-2" style="object-fit:cover"/>
+
+    </div>
+
+    
+
+    <br />
+    <a class="btn btn-danger" asp-action="Index">Back To List</a>
+</div>
+</div>
